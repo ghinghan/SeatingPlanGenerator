@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+	<title>SeatingPlanGenerator</title>
+	<body>
+		<form name='form' id='seatingplan'>
+			<table border="1" id="seatingTable" align="center">
+				<tr>
+					<td colspan="2"><center><h1>排座位小幫手</h1></center></td>
+				</tr>
+				<tr>
+					<td>請輸入座位數量,有幾排?(行)：<input type='text' name='column' id='column' /></td>
+					<td>每排有幾個?(列)：<input type='text' name='row' id='row' /></td>
+				</tr>
+				<tr>
+					<td>起始座號：<input type='text' name='startNum' id='startNum' /></td>
+					<td>結束座號：<input type='text' name='endNum' id='endNum' /></td>
+				</tr>
+				<tr>
+					<td colspan="2">(非必填)座號缺號：(可填多個座號,以逗號隔開)<input type='text' name='emptyNums' id='emptyNums' /></td>
+				</tr>
+				<tr>
+					<td colspan="2">(非必填)預選座位1：(第幾排,第幾個,座號.  空位請輸入座號0. Ex: 2,1,10)<input type='text' name='reservedNum' id='reservedNum' /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type='button' name='add' value='增加預選座位' onclick='addReservedNum();' /><input type='button' name='add' value='減少預選座位' onclick='removeReservedNum();' /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type='button' name='submit' value='產生座位表' onclick='processFormData();' /></td>
+				</tr>
+			</table>
+		</form>
+		<table border="1" id="outputTable" align="center">
+		<script src="index.js" charset="UTF-8"></script>
+	</body>
+</html>
