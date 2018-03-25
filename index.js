@@ -131,7 +131,7 @@ function processFormData() {
   
   var tr_footer = document.createElement("tr");
   var td_footer = document.createElement('td');
-  td_footer.innerHTML = '<input type="button" id="downloadButton" value="儲存成CSV檔" onclick="download()">';
+  td_footer.innerHTML = '<input type="button" id="downloadButton" value="存檔" onclick="download()">';
   td_footer.colSpan = column.toString();
   td_footer.style.textAlign = "center";
   tr_footer.appendChild(td_footer);
